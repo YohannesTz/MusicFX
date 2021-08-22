@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="518.0" prefWidth="678.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="res.Controller">
+   <children>
+      <VBox fx:id="image_background" alignment="CENTER" prefHeight="600.0" prefWidth="311.0" styleClass="imageBack" />
+      <VBox prefHeight="439.0" prefWidth="274.0" spacing="5.0" HBox.hgrow="ALWAYS">
+         <children>
+            <HBox alignment="TOP_RIGHT" prefHeight="28.0" prefWidth="272.0">
+               <children>
+                  <ImageView fx:id="closeButton" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icons8-close-window-50.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Text fx:id="titleTextView" fill="#434343" strokeType="OUTSIDE" strokeWidth="0.0" text="Music Title">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+            </Text>
+            <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+            <HBox alignment="CENTER" prefHeight="37.0" prefWidth="277.0" spacing="10.0">
+               <children>
+                  <ImageView fx:id="playpauseButton" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/Play.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="6.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Slider fx:id="trackSlider" prefHeight="16.0" prefWidth="199.0" value="35.0" HBox.hgrow="ALWAYS" />
+                  <ImageView fx:id="openButton" fitHeight="20.0" fitWidth="20.0" layoutX="32.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icons8_Open_48px.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

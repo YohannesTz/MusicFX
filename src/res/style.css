@@ -1,0 +1,15 @@
+.imageBack {
+    -fx-background-image: url("images/background.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 311 600;
+    -fx-background-position: center center;
+}
+
+/*
+.slider .track {
+   -fx-background-color: #434343;
+}
+
+.slider .thumb {
+   -fx-background-color: #ababab;
+}*/
